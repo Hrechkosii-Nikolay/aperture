@@ -269,7 +269,7 @@ body {
 
 .our-work-btn:hover {
   color: #fff;
-  background-color: var(--body-bg-color);
+  background-color: transparent;
   border: 1px solid #fff;
 }
 
