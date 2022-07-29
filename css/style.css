@@ -92,6 +92,7 @@ body {
 
 .uppercase-title {
   line-height: 1.43;
+  font-size: 14px;
 
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -104,6 +105,69 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
+/* -----MAIN-BTN------  */
+.main-btn {
+  display: inline-block;
+  color: #000;
+  background-color: #fff;
+  border-radius: 14px;
+  line-height: 1.2;
+  border: 1px solid transparent;
+  padding: 10px;
+}
+.btn-svg {
+  display: inline-block;
+  vertical-align: middle;
+  fill: inherit;
+  margin-right: 5px;
+}
+.main-btn:hover {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.main-btn:hover .btn-svg {
+  fill: currentColor;
+}
+
+/* ---------BANER----------  */
+
+.background-baner {
+  min-height: 600px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.baner {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -5%;
+}
+
+.background-baner-wrap {
+  max-width: 298px;
+}
+
+.background-baner .section-icon {
+  position: absolute;
+}
+
+.background-baner .text {
+  line-height: 1.43;
+  font-weight: 200;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+/* --------------------------------------  */
+/* --------------------------------------  */
+/* --------------------------------------  */
 
 /* --------header--------  */
 .main-nav {
@@ -145,8 +209,6 @@ body {
 
 /* --------hero-------- */
 .hero {
-  /* position: relative; */
-
   display: flex;
   text-align: center;
   align-items: flex-end;
@@ -161,6 +223,8 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+
+  position: relative;
 }
 
 .hero > .uppercase-title {
@@ -181,14 +245,18 @@ body {
   max-width: 580px;
   text-align: center;
   line-height: 1.43;
+  margin-bottom: 4px;
 }
 
+.hero .section-icon {
+  position: absolute;
+}
 .section-icon {
   display: flex;
   justify-content: flex-end;
 
-  margin-right: -100px;
-  margin-bottom: 4px;
+  bottom: 40px;
+  right: 40px;
 }
 
 .section-icon .icon {
@@ -247,32 +315,98 @@ body {
   margin-bottom: 15px;
 }
 
-.our-work-btn {
-  display: inline-block;
+/* ----------Mauntine-baner-1----------  */
 
-  color: #000;
-  background-color: #fff;
-  border-radius: 14px;
-  line-height: 1.2;
-  border: 1px solid transparent;
-
-  padding: 10px;
+.mauntine-baner-1 {
+  background-image: url(../image/baner-mountain-1.jpg);
 }
 
-.btn-svg {
-  display: inline-block;
-  vertical-align: middle;
-  fill: inherit;
+/* ----------Tools-we-use----------  */
 
-  margin-right: 5px;
+.tools-we-use .uppercase-title {
+  margin-bottom: 6px;
 }
 
-.our-work-btn:hover {
-  color: #fff;
-  background-color: transparent;
-  border: 1px solid #fff;
+.tools-we-use .secondary-title {
+  font-size: 28px;
+  line-height: 1.14;
+  color: #ffffff;
+
+  margin-bottom: 14px;
 }
 
-.our-work-btn:hover .btn-svg {
-  fill: currentColor;
+.tools-we-use .text {
+  font-weight: 200;
+  line-height: 1.43;
+
+  color: #ffffff;
+  margin-bottom: 20px;
+  max-width: 514px;
+}
+.tools-we-use {
+  position: relative;
+
+  background-image: url(../image/tools-we-use.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  min-height: 540px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.tools-we-use .section-icon {
+  position: absolute;
+}
+
+/* -------plant-baner-------  */
+.plant-baner {
+  background-image: url(../image/baner-plants.jpg);
+}
+
+/* -------past-clients-------  */
+.past-clients {
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.past-clients .section-sub-title {
+  margin-bottom: 109px;
+}
+.past-clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* -------------Mauntine-Baner-2-----------------  */
+
+.mauntine-baner-2 {
+  background-image: url(../image/baner-mountain-2.jpg);
+}
+
+/* -------------Need help---------------  */
+
+.need-help {
+  padding-top: 113px;
+  padding-bottom: 108px;
+
+  position: relative;
+}
+
+.need-help .section-main-title {
+  max-width: 571px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.need-help .section-sub-title {
+  margin-bottom: 12px;
+}
+.need-help-btn {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
