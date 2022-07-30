@@ -203,8 +203,8 @@ body {
 }
 
 .nav-link:hover {
-  background-color: #fff;
-  color: var(--body-bg-color);
+  background-color: transparent;
+  border: 1px solid #fff;
   transition: 0.3s;
 }
 
