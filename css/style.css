@@ -63,6 +63,8 @@ body {
   line-height: 1.43;
   color: var(--main-text-color);
   background-color: var(--body-bg-color);
+
+  max-width: 100%;
 }
 
 .container {
